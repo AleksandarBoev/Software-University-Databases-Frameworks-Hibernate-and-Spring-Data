@@ -1,9 +1,7 @@
 package p07_print_all_minion_names;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -19,7 +17,7 @@ public class Main {
             "SELECT name FROM minions"
         );
 
-        List<String> minionNames = new ArrayList<>(60);
+        Deque<String> minionNames = new ArrayDeque<>(60);
 
         ResultSet minionNamesResultSet = sqlGetAllMinionNames.executeQuery();
         while (minionNamesResultSet.next()) {
@@ -27,22 +25,15 @@ public class Main {
         }
         connectionToDb.close();
 
-        int minionsCount = minionNames.size();
+        boolean flag = true;
+        while (!minionNames.isEmpty()) {
+            if (flag)
+                System.out.println(minionNames.pollFirst()); //gets and removes first element
+             else
+                System.out.println(minionNames.pollLast()); //gets and removes last element
 
-        List<String> minionsReordered = new ArrayList<>();
-        for (int i = 0; i < minionsCount / 2; i++) {
-            minionsReordered.add(minionNames.get(i));
-            minionsReordered.add(minionNames.get(minionsCount - i - 1));
+            flag = !flag;
         }
-
-//        if (minionsCount % 2 == 0) {
-//            minionsReordered.remove(minionsReordered.size() - 1);
-//        }
-
-        for (String minionName : minionsReordered) {
-            System.out.println(minionName);
-        }
-
 
     }
 }
