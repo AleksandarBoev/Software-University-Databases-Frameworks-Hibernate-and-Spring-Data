@@ -12,4 +12,8 @@ public interface DbContext<T> { //to understand it better, just replace "T" with
     T findFirst() throws SQLException, InstantiationException, IllegalAccessException; //returns the first entity from the table
 
     T findFirst(String whereClause) throws SQLException, InstantiationException, IllegalAccessException; //returns an entity, which matches the where clause
+
+    T findById(long id) throws IllegalAccessException, SQLException, InstantiationException;
+
+    boolean deleteById(long id) throws SQLException, InstantiationException, IllegalAccessException;
 }

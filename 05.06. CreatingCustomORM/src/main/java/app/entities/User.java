@@ -6,7 +6,7 @@ import app.annotations.PrimaryKey;
 
 import java.util.Date;
 
-@Entity(nameInDb = "users")
+@Entity(nameInDb = "newest_users")
 public final class User {
 
     @PrimaryKey(nameInDb = "id")
@@ -19,6 +19,12 @@ public final class User {
     private int age;
 
     public User() {
+    }
+
+    public User(long id, String userName, int age) {
+        this.id = id;
+        this.userName = userName;
+        this.age = age;
     }
 
     public User(String userName, int age) {
