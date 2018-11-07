@@ -80,22 +80,16 @@ public class EntityManager<T> implements DbContext<T> {
 
     @Override
     public T findFirst() throws SQLException, InstantiationException, IllegalAccessException {
-        String query = String.format(SELECT_ALL_FROM, this.getTableName());
-        this.sqlStatement = this.connectionToDb.prepareStatement(query);
-
-        ResultSet resultSet = this.sqlStatement.executeQuery();
-        if (!resultSet.next())
-            return null;
-
-        T entity = this.mapToEntityFromDb(resultSet);
-
-        return entity;
+        return this.findFirst("");
     }
 
     @Override
     public T findFirst(String whereClause) throws SQLException, InstantiationException, IllegalAccessException {
         String query = String.format(SELECT_ALL_FROM + " " + WHERE_CLAUSE,
                 this.getTableName(), whereClause);
+
+        if (whereClause.equals(""))
+            query = query.replace("WHERE", "");
 
         this.sqlStatement = this.connectionToDb.prepareStatement(query);
 
@@ -167,6 +161,10 @@ public class EntityManager<T> implements DbContext<T> {
         this.sqlStatement.execute();
     }
 
+    /*
+    What if some columns types have changed? Table in db needs to be modified! But at this point
+    I don't know how to get the column type from a table in the db.
+    */
     private void updateTable() throws IllegalAccessException, SQLException, InstantiationException {
         Map<String, String> columnsNamesTypes = this.getColumnsNamesDataTypes();
 
@@ -411,7 +409,3 @@ public class EntityManager<T> implements DbContext<T> {
 
 }
 
-/*
-What if some columns types have changed? Table in db needs to be modified! But at this point
-I don't know how to get the column type from a table in the db.
- */
