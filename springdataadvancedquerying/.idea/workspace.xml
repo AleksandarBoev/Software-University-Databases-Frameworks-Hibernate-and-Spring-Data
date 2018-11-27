@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44cf1b74-ae9e-4cb5-86ce-39528974cc13" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/dataSources/95659e2e-6811-445a-b4b3-94fb17fd2a23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/dataSources/95659e2e-6811-445a-b4b3-94fb17fd2a23/storage_v2/_src_/schema/books_system_db.OW2DxA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/dataSources/95659e2e-6811-445a-b4b3-94fb17fd2a23/storage_v2/_src_/schema/bookshop_system_db.rqXzVg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/controller/BookshopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/controller/BookshopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/AgeRestriction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/AgeRestriction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/EditionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/EditionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/AuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@MySQL" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookshop_system_db: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BookshopController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/controller/BookshopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditionType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/EditionType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="107" column="97" selection-start-line="107" selection-start-column="97" selection-end-line="107" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/BookRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books_categories" pinned="false" current-in-tab="false">
+        <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/books_categories">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories" pinned="false" current-in-tab="false">
+        <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/categories">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d73eb798-89b7-4664-aa44-a82b07e0e263/console.sql" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/AgeRestriction.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Author.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/EditionType.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/pom.xml" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/AuthorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookService.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/controller/BookshopController.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/BookRepository.java" />
+        <option value="$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Book.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="985" />
+    <option name="y" value="171" />
+    <option name="width" value="1185" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshopsystemapp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springdataadvancedquerying" type="b2602c69:ProjectViewProjectNode" />
+              <item name="14.SpringDataAdvancedQuerying-Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="bookshopsystemapp.BookshopSystemApp" />
+      <module name="bookshopsysytem" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BookshopSystemApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bookshopsysytem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bookshopsystemapp.BookshopSystemApp" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run" />
+      <item itemvalue="Spring Boot.BookshopSystemApp" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44cf1b74-ae9e-4cb5-86ce-39528974cc13" name="Default" comment="" />
+      <created>1543349807933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543349807933</updated>
+      <workItem from="1543349810027" duration="6562000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6562000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37429377" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32909605" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info anchor="right" id="Database" visible="true" weight="0.24496645" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/AgeRestriction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/AuthorRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/AuthorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/util/FileUtilImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/files/authors.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/files/books.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/files/categories.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/AuthorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/BookshopSystemApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/books">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/authors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d73eb798-89b7-4664-aa44-a82b07e0e263/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/books_categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d73eb798-89b7-4664-aa44-a82b07e0e263/schema/bookshop_system_db/table/categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/EditionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/service/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="107" column="97" selection-start-line="107" selection-start-column="97" selection-end-line="107" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/controller/BookshopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../14.SpringDataAdvancedQuerying-Exercise/src/main/java/bookshopsystemapp/domain/entities/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>bookshopsysytem</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20124805" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20124805" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
