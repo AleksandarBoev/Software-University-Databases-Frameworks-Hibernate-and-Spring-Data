@@ -44,7 +44,6 @@ public class BookshopController implements CommandLineRunner {
 //        this.problem09CountBooks();
 //        this.problem10TotalBookCopies();
 //        this.problem11ReducedBook();
-        System.out.println("Hello");
     }
 
     /*
