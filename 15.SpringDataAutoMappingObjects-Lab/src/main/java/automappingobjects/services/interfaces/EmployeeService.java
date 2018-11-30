@@ -1,6 +1,7 @@
 package automappingobjects.services.interfaces;
 
 import automappingobjects.domain.dtos.EmployeeDto;
+import automappingobjects.domain.dtos.EmployeeDtoTask3;
 import automappingobjects.domain.entities.Employee;
 import automappingobjects.repositories.EmployeeRepository;
 
@@ -10,4 +11,6 @@ public interface EmployeeService extends BaseService<Employee, EmployeeRepositor
     EmployeeDto getEmployeeBasicInfoById(Long id);
 
     List<EmployeeDto> getEmployeesBasicInfo();
+
+    List<EmployeeDtoTask3> getEmployeesBasicInfoByBirthYearBefore(Integer year);
 }

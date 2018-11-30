@@ -1,6 +1,7 @@
 package automappingobjects;
 
 import automappingobjects.domain.dtos.EmployeeDto;
+import automappingobjects.domain.dtos.EmployeeDtoTask3;
 import automappingobjects.domain.dtos.ManagerDto;
 import automappingobjects.domain.entities.Address;
 import automappingobjects.domain.entities.Employee;
@@ -38,8 +39,10 @@ public class AppController implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+//        this.seedData();
 //        this.problem01SimpleMapping();
-        this.problem02AdvancedMapping();
+//        this.problem02AdvancedMapping();
+//        this.problem03Projection();
     }
 
     private void problem01SimpleMapping() {
@@ -87,6 +90,12 @@ public class AppController implements CommandLineRunner {
         System.out.println(managerDto);
     }
 
+    private void problem03Projection() {
+        //Although one of the employees does not have a manager, the program does not break. Just gives a null value to the lastName.
+        List<EmployeeDtoTask3> employeeDtoTask3List = this.employeeService.getEmployeesBasicInfoByBirthYearBefore(1990);
+        employeeDtoTask3List.forEach(System.out::println);
+    }
+
     private void seedData() {
         Address address1 = new Address("Sofia");
         Address address2 = new Address("Berlin");
@@ -97,19 +106,25 @@ public class AppController implements CommandLineRunner {
         Employee employee2 = new Employee("Gergon", "Gergaev", BigDecimal.valueOf(1800.0), LocalDate.parse("1995-08-25"), address1);
         Employee employee3 = new Employee("Gergon2", "Gergaev2", BigDecimal.valueOf(1800.0), LocalDate.parse("1995-08-25"), address2);
         Employee employee4 = new Employee("Person 40", "What2", BigDecimal.valueOf(500.0), LocalDate.parse("1995-09-05"),  address2);
+        Employee employee5 = new Employee("Chuck", "Norris", BigDecimal.valueOf(3333), LocalDate.parse("1989-01-01"), address2);
+        Employee employee6 = new Employee("Original", "Name", BigDecimal.valueOf(2222), LocalDate.parse("1978-01-01"), address2);
 
         this.employeeService.save(employee1);
         this.employeeService.save(employee2);
         this.employeeService.save(employee3);
         this.employeeService.save(employee4);
+        this.employeeService.save(employee5);
+        this.employeeService.save(employee6);
 
         employee2.setManager(employee1);
         employee3.setManager(employee1);
         employee4.setManager(employee1);
+        employee6.setManager(employee5);
 
         this.employeeService.save(employee2);
         this.employeeService.save(employee3);
         this.employeeService.save(employee4);
+        this.employeeService.save(employee6);
 //        this.employeeService.save(employee1); //this doesn't help
 
 //        System.out.println(employee1); //weird how the manager has 0 employees now
