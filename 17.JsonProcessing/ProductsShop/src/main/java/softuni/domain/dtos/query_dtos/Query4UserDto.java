@@ -1,15 +1,13 @@
-package softuni.domain.dtos;
+package softuni.domain.dtos.query_dtos;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import java.util.List;
 
-public class UserSeedDto {
+public class Query4UserDto {
     private String firstName;
     private String lastName;
     private Integer age;
+    private Query4ProductsSoldDto soldProducts;
 
-    @Min(value = 1, message = "Name can't be an empty string!")
     public String getFirstName() {
         return this.firstName;
     }
@@ -18,8 +16,6 @@ public class UserSeedDto {
         this.firstName = firstName;
     }
 
-    @NotNull(message = "Last name can't be null!")
-    @Min(value = 3, message = "Last name should be at least 3 characters long!")
     public String getLastName() {
         return this.lastName;
     }
@@ -28,12 +24,19 @@ public class UserSeedDto {
         this.lastName = lastName;
     }
 
-    @Positive(message = "Age should be a positive number!")
     public Integer getAge() {
         return this.age;
     }
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Query4ProductsSoldDto getSoldProducts() {
+        return this.soldProducts;
+    }
+
+    public void setSoldProducts(Query4ProductsSoldDto soldProducts) {
+        this.soldProducts = soldProducts;
     }
 }

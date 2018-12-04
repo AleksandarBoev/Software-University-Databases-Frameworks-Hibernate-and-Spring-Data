@@ -1,10 +1,10 @@
-package softuni.domain.dtos;
+package softuni.domain.dtos.seed_dtos;
 
 import softuni.domain.entities.User;
 
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
 public class ProductSeedDto {
@@ -14,7 +14,7 @@ public class ProductSeedDto {
     private User seller;
 
     @NotNull(message = "Product price can't be null!")
-    @Min(value = 3, message = "Product name should be at least 3 characters long!")
+    @Size(min = 3, message = "Product name should be at least 3 characters long!")
     public String getName() {
         return this.name;
     }
@@ -48,5 +48,21 @@ public class ProductSeedDto {
 
     public void setSeller(User seller) {
         this.seller = seller;
+    }
+
+    @Override
+    public String toString() {
+        String buyerNames = "null";
+        if (this.buyer != null)
+            buyerNames = this.buyer.getFirstName() + " " + this.buyer.getLastName();
+
+        String sellerNames = this.seller.getFirstName() + " " + this.seller.getLastName();
+
+        return "ProductSeedDto {" +
+                "name = '" + this.name + '\'' +
+                ", price = " + this.price +
+                ", buyer = " + buyerNames +
+                ", seller = " + sellerNames +
+                '}';
     }
 }

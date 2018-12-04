@@ -1,5 +1,7 @@
 package softuni.services.interfaces;
 
 public interface CategoryService {
-    void seedCategories(String json);
+    String seedCategories(String json);
+
+    String getJsonCategoriesNameProductsCountAveragePriceTotalRevenue();
 }

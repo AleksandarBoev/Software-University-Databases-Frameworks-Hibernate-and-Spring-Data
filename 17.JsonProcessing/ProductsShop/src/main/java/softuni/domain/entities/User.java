@@ -1,9 +1,8 @@
 package softuni.domain.entities;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.persistence.*;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 import java.util.List;
 
 @Entity
@@ -46,7 +45,8 @@ public class User extends BaseEntity {
         this.age = age;
     }
 
-    @OneToMany(mappedBy = "seller", fetch = FetchType.LAZY) //TODO possible problem
+    @Transactional
+    @OneToMany(mappedBy = "seller", fetch = FetchType.EAGER)
     public List<Product> getProductsSold() {
         return this.productsSold;
     }
@@ -55,7 +55,7 @@ public class User extends BaseEntity {
         this.productsSold = productsSold;
     }
 
-    @OneToMany(mappedBy = "buyer", fetch = FetchType.LAZY) //TODO possible problem
+    @OneToMany(mappedBy = "buyer")
     public List<Product> getProductsBought() {
         return this.productsBought;
     }

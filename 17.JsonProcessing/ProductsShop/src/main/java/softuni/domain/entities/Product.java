@@ -35,7 +35,7 @@ public class Product extends BaseEntity {
         this.price = price;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne//(cascade = CascadeType.ALL)
     @JoinColumn(name = "buyer_id", referencedColumnName = "id")
     public User getBuyer() {
         return this.buyer;
@@ -45,17 +45,18 @@ public class Product extends BaseEntity {
         this.buyer = buyer;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne//(cascade = CascadeType.ALL)
     @JoinColumn(name = "seller_id", referencedColumnName = "id", nullable = false)
     public User getSeller() {
         return this.seller;
     }
 
+
     public void setSeller(User seller) {
         this.seller = seller;
     }
 
-    @ManyToMany(fetch = FetchType.LAZY) //TODO possible problem
+    @ManyToMany
     @JoinTable(
             name = "products_categories",
             joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"),

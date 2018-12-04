@@ -1,5 +1,9 @@
 package softuni.services.interfaces;
 
 public interface UserService {
-    void seedUsers(String json);
+    String seedUsers(String json);
+
+    String getJsonUsersWithAtLeastOneSoldItem();
+
+    String getJsonProductSoldOrderByProductsSoldDescLastNameAsc();
 }

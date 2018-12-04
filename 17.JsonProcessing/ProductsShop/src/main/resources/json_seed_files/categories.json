@@ -1,4 +1,7 @@
-[{"name":"Drugs"},
+[{"name":"D"},
+{"name":"More than fifteen characters long"},
+{"name":null},
+{"name":"Drugs"},
 {"name":"Adult"},
 {"name":"Electronics"},
 {"name":"Garden"},

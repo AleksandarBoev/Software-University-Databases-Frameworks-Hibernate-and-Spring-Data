@@ -1,4 +1,5 @@
 [
+    { "firstName":"", "lastName":null, "age":-30},
 	{ "firstName":"Eugene", "lastName":"Stewart", "age":65},
 	{ "firstName":"Fred", "lastName":"Allen", "age":57 },
 	{ "firstName":"Clarence", "lastName":"Fowler","age":50},
