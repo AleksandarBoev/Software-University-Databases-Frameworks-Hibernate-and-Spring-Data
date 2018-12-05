@@ -1,0 +1,542 @@
+[
+  {
+    "id": 29,
+    "name": "Louann Holzworth",
+    "birthDate": "1960-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Citroen C8, Discount: 0.4",
+      "Car: Peugeot 206, Discount: 0.5",
+      "Car: Dacia Sandero, Discount: 0.0",
+      "Car: Seat Toledo, Discount: 0.0",
+      "Car: Renault Alaskan, Discount: 0.4",
+      "Car: BMW M5 F10, Discount: 0.1",
+      "Car: Citroen Berlingo, Discount: 0.4",
+      "Car: Mercedes W210, Discount: 0.4",
+      "Car: Toyota Prius, Discount: 0.2",
+      "Car: Rolls-Royce Wraith, Discount: 0.1",
+      "Car: Chevy Camaro, Discount: 0.15",
+      "Car: Rolls-Royce Phantom Drophead Coupé, Discount: 0.05",
+      "Car: Seat Toledo, Discount: 0.5",
+      "Car: Lamborghini Gallardo, Discount: 0.1",
+      "Car: Seat Toledo, Discount: 0.15"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Donnetta Soliz",
+    "birthDate": "1963-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Dacia Sandero Stepway, Discount: 0.3",
+      "Car: Toyota Prius, Discount: 0.3",
+      "Car: Opel Corsa, Discount: 0.3",
+      "Car: Chevy Cruze, Discount: 0.0",
+      "Car: Great Wall Haval H6, Discount: 0.2",
+      "Car: Fiat Panda 4x4, Discount: 0.15",
+      "Car: Toyota Camry Hybrid, Discount: 0.3",
+      "Car: Dacia Sandero, Discount: 0.05",
+      "Car: Peugeot 306, Discount: 0.1",
+      "Car: Citroen C8, Discount: 0.4",
+      "Car: Nissan 370Z, Discount: 0.1"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Rema Revelle",
+    "birthDate": "1970-05-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Toyota Prius, Discount: 0.2",
+      "Car: Chevy Caprice, Discount: 0.0",
+      "Car: Dacia Sandero, Discount: 0.5",
+      "Car: Dacia Dokker, Discount: 0.3",
+      "Car: Nissan Altima, Discount: 0.5",
+      "Car: Fiat Panda, Discount: 0.5",
+      "Car: Citroen C3, Discount: 0.0",
+      "Car: Nissan GT-R, Discount: 0.2",
+      "Car: Fiat Freemont, Discount: 0.05",
+      "Car: Dacia Sandero, Discount: 0.4",
+      "Car: Nissan Altima, Discount: 0.5",
+      "Car: Citroen C1, Discount: 0.15",
+      "Car: Mercedes W211, Discount: 0.05"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Carri Knapik",
+    "birthDate": "1972-02-02T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Opel Omega, Discount: 0.3",
+      "Car: Opel Omega, Discount: 0.1",
+      "Car: Dacia Logan, Discount: 0.15",
+      "Car: Mercedes W212, Discount: 0.2",
+      "Car: Seat Mii, Discount: 0.15",
+      "Car: Ford Ranger, Discount: 0.5",
+      "Car: Mercedes W211, Discount: 0.0",
+      "Car: Opel Vectra, Discount: 0.2"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Garret Capron",
+    "birthDate": "1975-07-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Lamborghini Diablo, Discount: 0.1",
+      "Car: BMW M6 E63, Discount: 0.4",
+      "Car: Ford Taurus, Discount: 0.15",
+      "Car: Seat Toledo, Discount: 0.15",
+      "Car: Ferrari F430, Discount: 0.2",
+      "Car: Alfa Romeo Alfetta, Discount: 0.3",
+      "Car: Rolls-Royce Phantom Drophead Coupé, Discount: 0.2",
+      "Car: Toyota Camry Hybrid, Discount: 0.2",
+      "Car: Toyota Yaris, Discount: 0.05",
+      "Car: Ferrari F430, Discount: 0.5",
+      "Car: Ferrari F40, Discount: 0.4",
+      "Car: Seat Toledo, Discount: 0.3",
+      "Car: Alfa Romeo 75, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Teddy Hobby",
+    "birthDate": "1975-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Mercedes A 160 CDI, Discount: 0.1",
+      "Car: Skoda Fabia, Discount: 0.15",
+      "Car: Chevy Caprice, Discount: 0.2",
+      "Car: Great Wall Haval M4, Discount: 0.05",
+      "Car: Seat Mii, Discount: 0.05",
+      "Car: Fiat Panda, Discount: 0.4",
+      "Car: Peugeot 407, Discount: 0.5",
+      "Car: Renault Espace, Discount: 0.15",
+      "Car: Fiat 500L, Discount: 0.2",
+      "Car: Nissan Versa, Discount: 0.1",
+      "Car: Renault Alaskan, Discount: 0.15"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Audrea Cardinal",
+    "birthDate": "1976-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Mercedes W212, Discount: 0.0",
+      "Car: Renault Duster, Discount: 0.5",
+      "Car: Skoda Fabia, Discount: 0.15",
+      "Car: Lamborghini Gallardo, Discount: 0.3"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Francis Mckim",
+    "birthDate": "1977-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Peugeot 405, Discount: 0.4",
+      "Car: Seat Mii, Discount: 0.2",
+      "Car: Ford Torino, Discount: 0.4",
+      "Car: Mercedes W211, Discount: 0.3",
+      "Car: BMW 1M Coupe, Discount: 0.15",
+      "Car: BMW E88, Discount: 0.4",
+      "Car: Seat Mii, Discount: 0.3",
+      "Car: Opel Kadet, Discount: 0.2",
+      "Car: Fiat Freemont, Discount: 0.4",
+      "Car: Dacia Logan, Discount: 0.05",
+      "Car: Fiat Panda 4x4, Discount: 0.0",
+      "Car: Opel Kadet, Discount: 0.3",
+      "Car: Rolls-Royce Ghost, Discount: 0.5",
+      "Car: Ford Pinto, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Brett Brickley",
+    "birthDate": "1980-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Nissan GT-R, Discount: 0.05",
+      "Car: Ferrari F40, Discount: 0.1",
+      "Car: Ferrari F430, Discount: 0.5",
+      "Car: Alfa Romeo AR51, Discount: 0.15",
+      "Car: Dacia Dokker, Discount: 0.1",
+      "Car: Renault Alaskan, Discount: 0.2",
+      "Car: Opel Corsa, Discount: 0.05",
+      "Car: Ferrari Daytona, Discount: 0.15",
+      "Car: Ferrari 250 GTO, Discount: 0.5",
+      "Car: Nissan Altima, Discount: 0.05",
+      "Car: Renault Captur, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Kristian Engberg",
+    "birthDate": "1981-10-03T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Citroen C3, Discount: 0.5",
+      "Car: Fiat Panda, Discount: 0.5",
+      "Car: Mercedes W212, Discount: 0.15",
+      "Car: Nissan 370Z, Discount: 0.1",
+      "Car: Alfa Romeo Giulietta, Discount: 0.1",
+      "Car: Nissan Altima, Discount: 0.1",
+      "Car: Rolls-Royce Phantom Drophead Coupé, Discount: 0.4",
+      "Car: Ferrari 275, Discount: 0.2",
+      "Car: Ford Pinto, Discount: 0.1"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Hipolito Lamoreaux",
+    "birthDate": "1982-08-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Mercedes W212, Discount: 0.3",
+      "Car: Fiat Panda, Discount: 0.15",
+      "Car: Toyota Prius, Discount: 0.4",
+      "Car: Peugeot 407, Discount: 0.05",
+      "Car: Opel Kadet, Discount: 0.4",
+      "Car: Alfa Romeo 156, Discount: 0.4",
+      "Car: Ford Fiesta, Discount: 0.0",
+      "Car: Toyota Prius, Discount: 0.05",
+      "Car: Ferrari Daytona, Discount: 0.05",
+      "Car: Toyota Prius, Discount: 0.05",
+      "Car: Peugeot 407, Discount: 0.15",
+      "Car: Nissan GT-R, Discount: 0.15",
+      "Car: Toyota Prius, Discount: 0.0",
+      "Car: Lamborghini Diablo, Discount: 0.4",
+      "Car: Nissan Altima, Discount: 0.05",
+      "Car: Alfa Romeo Giulietta, Discount: 0.4",
+      "Car: Ferrari Daytona, Discount: 0.2"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Zada Attwood",
+    "birthDate": "1982-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Dacia Logan, Discount: 0.2",
+      "Car: Toyota Prius, Discount: 0.15",
+      "Car: Seat Toledo, Discount: 0.4",
+      "Car: Toyota Camry Hybrid, Discount: 0.05",
+      "Car: Rolls-Royce Phantom, Discount: 0.05",
+      "Car: BMW M6 E63, Discount: 0.2",
+      "Car: Toyota Camry Hybrid, Discount: 0.05",
+      "Car: BMW M5 F10, Discount: 0.0",
+      "Car: Citroen C5, Discount: 0.15",
+      "Car: Fiat Panda, Discount: 0.0"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Sylvie Mcelravy",
+    "birthDate": "1983-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Chevy Caprice, Discount: 0.1",
+      "Car: Dacia Logan, Discount: 0.1",
+      "Car: Nissan GT-R, Discount: 0.3",
+      "Car: Citroen C1, Discount: 0.05",
+      "Car: Fiat 500L, Discount: 0.2",
+      "Car: Alfa Romeo AR51, Discount: 0.0",
+      "Car: Nissan GT-R, Discount: 0.1",
+      "Car: Renault Alaskan, Discount: 0.1",
+      "Car: Skoda Rapid, Discount: 0.3",
+      "Car: Chevy Cruze, Discount: 0.3",
+      "Car: BMW M Roadster E85, Discount: 0.15",
+      "Car: Ferrari Daytona, Discount: 0.2",
+      "Car: Mercedes W212, Discount: 0.1"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Rico Peer",
+    "birthDate": "1984-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Chevy Corvette, Discount: 0.15",
+      "Car: Opel Insignia, Discount: 0.1",
+      "Car: Alfa Romeo AR51, Discount: 0.4",
+      "Car: Chevy Camaro, Discount: 0.0",
+      "Car: Toyota Tacoma, Discount: 0.3",
+      "Car: Renault Captur, Discount: 0.1",
+      "Car: Lamborghini Diablo, Discount: 0.15",
+      "Car: Citroen C1, Discount: 0.5",
+      "Car: Citroen C5, Discount: 0.05"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hai Everton",
+    "birthDate": "1985-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Great Wall Haval H6, Discount: 0.2",
+      "Car: Toyota Yaris, Discount: 0.4",
+      "Car: Fiat Panda 4x4, Discount: 0.15",
+      "Car: Fiat 500L, Discount: 0.1",
+      "Car: Citroen C4, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lino Subia",
+    "birthDate": "1985-12-21T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Skoda Rapid Spaceback, Discount: 0.05",
+      "Car: Opel Corsa, Discount: 0.0",
+      "Car: Peugeot 405, Discount: 0.4",
+      "Car: Alfa Romeo Giulietta, Discount: 0.2",
+      "Car: Toyota Prius, Discount: 0.5"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Jimmy Grossi",
+    "birthDate": "1986-07-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Seat Ibiza, Discount: 0.15",
+      "Car: Toyota Camry Hybrid, Discount: 0.3",
+      "Car: BMW M6 E63, Discount: 0.4",
+      "Car: Ford Taurus, Discount: 0.1",
+      "Car: Fiat Freemont, Discount: 0.05",
+      "Car: Chevy Corvette, Discount: 0.5",
+      "Car: Ford Fiesta, Discount: 0.15",
+      "Car: Peugeot 308, Discount: 0.3",
+      "Car: Renault Espace, Discount: 0.2"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Carole Witman",
+    "birthDate": "1987-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Rolls-Royce Ghost, Discount: 0.0",
+      "Car: Fiat Panda, Discount: 0.1",
+      "Car: Peugeot 206, Discount: 0.3",
+      "Car: Nissan 370Z, Discount: 0.1",
+      "Car: Skoda Rapid, Discount: 0.1",
+      "Car: Fiat Panda 4x4, Discount: 0.3",
+      "Car: Rolls-Royce Wraith, Discount: 0.0",
+      "Car: Great Wall Haval M4, Discount: 0.4",
+      "Car: Nissan 370Z, Discount: 0.15"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Oren Perlman",
+    "birthDate": "1988-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Fiat Freemont, Discount: 0.15",
+      "Car: Renault Duster, Discount: 0.05",
+      "Car: Citroen C5, Discount: 0.4",
+      "Car: Toyota Prius, Discount: 0.0",
+      "Car: Seat Toledo, Discount: 0.0",
+      "Car: Ferrari Daytona, Discount: 0.3"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Marcelle Griego",
+    "birthDate": "1990-10-04T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Peugeot 306, Discount: 0.5",
+      "Car: Lamborghini Gallardo, Discount: 0.05",
+      "Car: Nissan Altima, Discount: 0.15",
+      "Car: Ferrari 275, Discount: 0.2",
+      "Car: Seat Toledo, Discount: 0.5",
+      "Car: Lamborghini Murciélago, Discount: 0.1",
+      "Car: Ford Taurus, Discount: 0.1",
+      "Car: Mercedes W202, Discount: 0.15",
+      "Car: Fiat Freemont, Discount: 0.15"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Natalie Poli",
+    "birthDate": "1990-10-04T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Opel Omega, Discount: 0.2",
+      "Car: Alfa Romeo 75, Discount: 0.15",
+      "Car: Toyota Prius, Discount: 0.5",
+      "Car: Citroen C4, Discount: 0.15",
+      "Car: Ferrari F430, Discount: 0.0",
+      "Car: Alfa Romeo AR51, Discount: 0.4",
+      "Car: Nissan GT-R, Discount: 0.05",
+      "Car: Fiat Panda 4x4, Discount: 0.1",
+      "Car: Opel Astra, Discount: 0.05",
+      "Car: Great Wall H2, Discount: 0.1",
+      "Car: BMW 1M Coupe, Discount: 0.5",
+      "Car: Fiat Panda, Discount: 0.1",
+      "Car: Seat Ibiza, Discount: 0.2",
+      "Car: BMW 1M Coupe, Discount: 0.05"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Yvonne Mccalla",
+    "birthDate": "1992-03-02T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Seat Ibiza, Discount: 0.5",
+      "Car: Dacia Dokker, Discount: 0.4",
+      "Car: Peugeot 306, Discount: 0.0",
+      "Car: Nissan Versa, Discount: 0.2",
+      "Car: Ferrari 275, Discount: 0.15",
+      "Car: Skoda Citigo, Discount: 0.0",
+      "Car: Rolls-Royce Phantom, Discount: 0.05",
+      "Car: BMW F20, Discount: 0.4",
+      "Car: Renault Alaskan, Discount: 0.15",
+      "Car: Renault Captur, Discount: 0.1",
+      "Car: Skoda Citigo, Discount: 0.15",
+      "Car: Chevy Camaro, Discount: 0.0"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ann Mcenaney",
+    "birthDate": "1992-03-02T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Peugeot 206, Discount: 0.05",
+      "Car: Citroen C1, Discount: 0.4",
+      "Car: BMW M6 E63, Discount: 0.2",
+      "Car: Lamborghini Gallardo, Discount: 0.0",
+      "Car: Alfa Romeo Giulietta, Discount: 0.1",
+      "Car: Lamborghini Murciélago, Discount: 0.05",
+      "Car: Fiat 500 (2007) Abarth 695 Tributo Maserati, Discount: 0.5",
+      "Car: Fiat 500 (2007) Abarth 695 Tributo Maserati, Discount: 0.5",
+      "Car: Seat Ibiza, Discount: 0.3",
+      "Car: Toyota Prius, Discount: 0.0"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Cinthia Lasala",
+    "birthDate": "1992-11-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Toyota Camry Hybrid, Discount: 0.4",
+      "Car: Peugeot 306, Discount: 0.5",
+      "Car: Seat Toledo, Discount: 0.0",
+      "Car: Skoda Citigo, Discount: 0.4",
+      "Car: Rolls-Royce Phantom Drophead Coupé, Discount: 0.3",
+      "Car: Ford Fiesta, Discount: 0.1",
+      "Car: Renault Clio IV, Discount: 0.15",
+      "Car: BMW F25, Discount: 0.15",
+      "Car: Opel Omega, Discount: 0.2",
+      "Car: Ford Fiesta, Discount: 0.05",
+      "Car: Fiat 500L, Discount: 0.05"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Emmitt Benally",
+    "birthDate": "1993-11-20T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Nissan Altima, Discount: 0.0",
+      "Car: Dacia Logan, Discount: 0.2",
+      "Car: Alfa Romeo 75, Discount: 0.2",
+      "Car: Nissan Versa, Discount: 0.5",
+      "Car: Dacia Logan, Discount: 0.1",
+      "Car: Peugeot 405, Discount: 0.2"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Nisha Markwell",
+    "birthDate": "1994-04-04T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Mercedes W203, Discount: 0.3",
+      "Car: Dacia Logan, Discount: 0.2",
+      "Car: Nissan GT-R, Discount: 0.15",
+      "Car: Nissan 370Z, Discount: 0.3",
+      "Car: Alfa Romeo AR51, Discount: 0.0",
+      "Car: Alfa Romeo Giulietta, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Faustina Burgher",
+    "birthDate": "1994-06-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Peugeot 308, Discount: 0.5",
+      "Car: Toyota Tacoma, Discount: 0.15",
+      "Car: Alfa Romeo Alfetta, Discount: 0.05",
+      "Car: Peugeot 206, Discount: 0.2",
+      "Car: Toyota Prius, Discount: 0.0",
+      "Car: Renault Duster, Discount: 0.4",
+      "Car: BMW M5 F10, Discount: 0.1"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Taina Achenbach",
+    "birthDate": "1994-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Citroen C3, Discount: 0.3",
+      "Car: Toyota Prius, Discount: 0.3",
+      "Car: Alfa Romeo 75, Discount: 0.0",
+      "Car: Opel Insignia, Discount: 0.1",
+      "Car: Citroen C1, Discount: 0.15",
+      "Car: Peugeot 206, Discount: 0.5",
+      "Car: Nissan GT-R, Discount: 0.1",
+      "Car: Toyota Tacoma, Discount: 0.2",
+      "Car: Fiat Freemont, Discount: 0.5"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Johnette Derryberry",
+    "birthDate": "1995-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      "Car: Peugeot 407, Discount: 0.15",
+      "Car: Mercedes W124, Discount: 0.15",
+      "Car: Dacia Logan, Discount: 0.05",
+      "Car: BMW M5 F10, Discount: 0.3",
+      "Car: Peugeot 407, Discount: 0.5",
+      "Car: BMW F20, Discount: 0.05",
+      "Car: Opel Corsa, Discount: 0.15",
+      "Car: Toyota Prius, Discount: 0.05",
+      "Car: BMW M6 E63, Discount: 0.3",
+      "Car: Toyota Yaris, Discount: 0.0",
+      "Car: Chevy Camaro, Discount: 0.1",
+      "Car: Ferrari Daytona, Discount: 0.3",
+      "Car: Dacia Duster, Discount: 0.5",
+      "Car: Rolls-Royce Ghost, Discount: 0.0",
+      "Car: Alfa Romeo AR51, Discount: 0.4"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Daniele Zarate",
+    "birthDate": "1995-10-05T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      "Car: Citroen C1, Discount: 0.1",
+      "Car: Peugeot 407, Discount: 0.15",
+      "Car: Fiat Panda 4x4, Discount: 0.1",
+      "Car: Alfa Romeo Alfetta, Discount: 0.1",
+      "Car: Rolls-Royce Ghost, Discount: 0.05",
+      "Car: Opel Insignia, Discount: 0.1",
+      "Car: Toyota Prius, Discount: 0.4",
+      "Car: Dacia Sandero, Discount: 0.3",
+      "Car: Skoda Citigo, Discount: 0.3"
+    ]
+  }
+]

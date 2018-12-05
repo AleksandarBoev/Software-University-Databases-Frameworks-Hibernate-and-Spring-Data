@@ -11,6 +11,7 @@ import java.io.IOException;
 @Controller
 public class AppController implements CommandLineRunner {
     private static final String RELATIVE_SEED_PATH = "seed_json/";
+    private static final String FULL_EXPORT_FILE_PATH =  "C:\\AleksandarUser\\Programming\\GitHubRepositories\\Software-University-Databases-Frameworks-Hibernate-and-Spring-Data\\17.JsonProcessing\\CarDealer\\src\\main\\resources\\export_json\\";
 
     private FileReaderUtil fileReaderUtil;
 
@@ -32,7 +33,43 @@ public class AppController implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        this.seedData();
+//        this.seedData();
+//        this.query01OrderedCustomers();
+//        this.query02CarsFromMakeToyota();
+//        this.query03LocalSuppliers();
+        this.query04CarsWithTheirListOfParts();
+//        this.query05TotalSalesByCustomer();
+//        this.query06SalesWithAppliedDiscount();
+    }
+
+    private void query01OrderedCustomers() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query01.json";
+        this.customerService.exportOrderedCustomers(fullFilePath);
+    }
+
+    private void query02CarsFromMakeToyota() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query02.json";
+        this.carService.exportCarsFromMakeOrderedByModelNameAscTravelledDistanceDesc(fullFilePath, "Toyota");
+    }
+
+    private void query03LocalSuppliers() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query03.json";
+        this.supplierService.exportLocalSuppliers(fullFilePath);
+    }
+
+    private void query04CarsWithTheirListOfParts() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query04.json";
+        this.carService.exportCarsAndTheirParts(fullFilePath);
+    }
+
+    private void query05TotalSalesByCustomer() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query05.json";
+        this.customerService.exportTotalSalesByCustomer(fullFilePath);
+    }
+
+    private void query06SalesWithAppliedDiscount() throws IOException {
+        String fullFilePath = FULL_EXPORT_FILE_PATH + "query06.json";
+        this.saleService.exportAllSales(fullFilePath);
     }
 
     //TODO think of a way of making a BaseServiceImpl, which does part of the work for seeding data.

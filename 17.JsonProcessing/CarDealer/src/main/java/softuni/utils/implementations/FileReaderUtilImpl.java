@@ -18,6 +18,6 @@ public class FileReaderUtilImpl implements FileReaderUtil {
 
         reader.close();
 
-        return result.toString().substring(0, result.toString().length() - 1); //TODO does it work with System.lineSeparator()?
+        return result.toString().substring(0, result.toString().length() - 1);
     }
 }

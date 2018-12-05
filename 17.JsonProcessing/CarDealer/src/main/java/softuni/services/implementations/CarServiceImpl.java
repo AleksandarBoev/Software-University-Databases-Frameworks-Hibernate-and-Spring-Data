@@ -1,20 +1,30 @@
 package softuni.services.implementations;
 
 import com.google.gson.Gson;
+import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;
 import org.springframework.stereotype.Service;
+import softuni.domain.dtos.export_dtos.Query2CarDto;
+import softuni.domain.dtos.export_dtos.Query4CarDto;
+import softuni.domain.dtos.export_dtos.Query4CarPartsDto;
+import softuni.domain.dtos.export_dtos.Query4PartDto;
 import softuni.domain.dtos.seed_dtos.CarSeedDto;
 import softuni.domain.entities.Car;
 import softuni.domain.entities.Part;
 import softuni.repositories.CarRepository;
 import softuni.repositories.PartRepository;
 import softuni.services.interfaces.CarService;
+import softuni.utils.interfaces.FileWriterUtil;
 import softuni.utils.interfaces.ValidatorUtil;
 
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 @Service
 public class CarServiceImpl implements CarService {
@@ -23,13 +33,15 @@ public class CarServiceImpl implements CarService {
     private ValidatorUtil<CarSeedDto> validatorUtil;
     private Gson gson;
     private PartRepository partRepository;
+    private FileWriterUtil fileWriterUtil;
 
-    public CarServiceImpl(CarRepository carRepository, ModelMapper modelMapper, ValidatorUtil<CarSeedDto> validatorUtil, Gson gson, PartRepository partRepository) {
+    public CarServiceImpl(CarRepository carRepository, ModelMapper modelMapper, ValidatorUtil<CarSeedDto> validatorUtil, Gson gson, PartRepository partRepository, FileWriterUtil fileWriterUtil) {
         this.carRepository = carRepository;
         this.modelMapper = modelMapper;
         this.validatorUtil = validatorUtil;
         this.gson = gson;
         this.partRepository = partRepository;
+        this.fileWriterUtil = fileWriterUtil;
     }
 
     @Override
@@ -67,7 +79,7 @@ public class CarServiceImpl implements CarService {
         List<Part> allParts = this.partRepository.findAll();
         int numberOfAllParts = allParts.size();
 
-        int[] numberOfParts = new int[] {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+        int[] numberOfParts = new int[]{10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
         Random random = new Random();
 
         for (Car seededCar : validCars) {
@@ -84,5 +96,79 @@ public class CarServiceImpl implements CarService {
         }
 
         return resultFromSeed.toString().trim();
+    }
+
+    @Override
+    public void exportCarsFromMakeOrderedByModelNameAscTravelledDistanceDesc(String fullFilePath, String make) throws IOException {
+        TypeMap<Car, Query2CarDto> typeMap = this.modelMapper.createTypeMap(Car.class, Query2CarDto.class);
+        typeMap.validate();
+
+        Query2CarDto[] query2CarDtos = this.carRepository.findCarsByMakeOrderByModelAscTravelledDistanceDesc(make)
+                .stream()
+                .map(c -> typeMap.map(c))
+                .toArray(n -> new Query2CarDto[n]);
+
+        String jsonResult = this.gson.toJson(query2CarDtos);
+        this.fileWriterUtil.writeToFile(fullFilePath, jsonResult);
+    }
+
+    @Override
+    public void exportCarsAndTheirParts(String fullFilePath) throws IOException {
+        List<Car> allCars = this.carRepository.findAll();
+
+        TypeMap<Part, Query4PartDto> partToPartDtoMap =
+                this.modelMapper.createTypeMap(Part.class, Query4PartDto.class);
+        partToPartDtoMap.validate();
+
+        List<Query4CarPartsDto> result = allCars.stream()
+                .map(c -> {
+                    String carMake = c.getMake();
+                    String carModel = c.getModel();
+                    BigInteger travelledDistance = c.getTravelledDistance();
+                    Query4CarDto car = new Query4CarDto(carMake, carModel, travelledDistance);
+
+                    List<Query4PartDto> partsList = c.getParts().stream().map(p -> partToPartDtoMap.map(p)).collect(Collectors.toList());
+
+                    return new Query4CarPartsDto(car, partsList);
+                }).collect(Collectors.toList());
+
+        String resultJson = this.gson.toJson(result);
+        this.fileWriterUtil.writeToFile(fullFilePath, resultJson);
+
+
+    /* This solution does not work. Gives error: Failed to get value from softuni.domain.entities.Car.getModel()
+        Converter<List<Part>, List<Query4PartDto>> partsListConverter =
+                context -> context.getSource().stream().map(p -> partToPartDtoMap.map(p)).collect(Collectors.toList());
+
+        Converter<List<String>, Query4CarDto> testing = context -> {
+            String make = context.getSource().get(0);
+            String model = context.getSource().get(1);
+            BigInteger travelledDistance = new BigInteger(context.getSource().get(2));
+            return new Query4CarDto(make, model, travelledDistance);
+        };
+
+        TypeMap<Car, Query4CarPartsDto> carToCarPartsDtoMap =
+                this.modelMapper.createTypeMap(Car.class, Query4CarPartsDto.class);
+
+        carToCarPartsDtoMap.addMappings(mapper -> {
+            mapper.using(testing).map(src -> {
+                List<String> params = new ArrayList<>();
+                params.add(src.getMake());
+                params.add(src.getModel());
+                params.add("" + src.getTravelledDistance());
+                return params;
+            }, Query4CarPartsDto::setCar);
+            mapper.using(partsListConverter).map(Car::getParts, Query4CarPartsDto::setParts);
+        });
+        carToCarPartsDtoMap.validate();
+
+        Query4CarPartsDto[] query4CarPartsDtos = allCars
+                .stream()
+                .map(c -> carToCarPartsDtoMap.map(c))
+                .toArray(n -> new Query4CarPartsDto[n]);
+
+        String jsonResult = this.gson.toJson(query4CarPartsDtos);
+        this.fileWriterUtil.writeToFile(fullFilePath, jsonResult);
+    */
     }
 }

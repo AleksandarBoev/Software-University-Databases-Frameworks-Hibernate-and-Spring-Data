@@ -52,7 +52,7 @@ public class Car extends BaseEntity{
         this.travelledDistance = travelledDistance;
     }
 
-    @ManyToMany //TODO fetch type?
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "cars_parts",
             joinColumns = @JoinColumn(name = "car_id", referencedColumnName = "id"),
